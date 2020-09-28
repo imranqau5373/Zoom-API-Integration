@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Authroize";
+}
+
+<h2>Authroize Your Page.</h2>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        debugger
+        var url = ('@Html.Raw(@ViewBag.AuthroizeUrl)');
+        window.location.replace(url);
+    });
+</script>
+
